@@ -1,0 +1,22 @@
+{
+    "manifest_version": 2,
+    "name" : "Camel Letter App",
+    "version" : "1.0",
+
+    "applications" : {
+        "gecko" :{
+            "id" : "vanribeiro.dev@gmail.com"
+        }
+    },
+
+    "permissions" : [
+        "http://*/*",
+        "https://*/*"
+    ],
+
+    "browser_action" : {
+        "defautl_icon" : "img/icons/camel.svg",
+        "defautl_title" : "Camel Case App",
+        "defautl_popup" : "popup/camelcaseapp.html"
+    }
+}
