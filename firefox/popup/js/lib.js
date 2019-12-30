@@ -6,6 +6,32 @@ export function lowerLetters(txt) {
     return txt.toLowerCase();
 }
 
+export function getOptions(opt, textToTransform) {
+    let textValue = textToTransform;
+    let transformedText = "";
+    switch (opt) {
+        case 'uppercase':
+            transformedText = upperLetters(textValue);
+            appendResult(transformedText);
+            break;
+        case 'lowercase':
+            transformedText = lowerLetters(textValue);
+            appendResult(transformedText);
+        case 'camelcase':
+            console.log('Capital Letters');
+        default:
+            break;
+    }
+}
+
+export function appendResult(result) {
+    let transformedText = document.querySelector('#changed-text');
+    let resultAnswer = document.createElement('p');
+    resultAnswer.textContent = result;
+    transformedText.appendChild(resultAnswer);
+}
+
+
 
 function capitalLetters(txt){
     var txt = "Vanessa Cristiane Ribeiro";
