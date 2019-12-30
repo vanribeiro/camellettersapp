@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', function(){
     let transformedText = document.querySelector('#changed-text');
     let input = document.querySelector('#text-to-be-transformed');
     let radios = document.getElementsByName("optioncase");
+    let textValue = "";
     
     button.addEventListener('click', function(){
         var result = document.createElement('p');
@@ -11,10 +12,12 @@ document.addEventListener('DOMContentLoaded', function(){
         for(var i = 0; i < radios.length; i++){
 
             if(radios[i].value === "uppercase" && radios[i].checked){
-                result.innerHTML = upperLetters(input.value);
+                textValue = input.value;
+                result.innerHTML = upperLetters(textValue);
                 transformedText.appendChild(result);
             } else if(radios[i].value === "lowercase" && radios[i].checked){
-                result.innerHTML = lowerLetters(input.value);
+                textValue = input.value;
+                result.innerHTML = lowerLetters(textValue);
                 transformedText.appendChild(result);
             } else{
                 //concluir
@@ -26,9 +29,22 @@ document.addEventListener('DOMContentLoaded', function(){
     input.addEventListener('keypress', function(event){
         if(event.keyCode == 13){
             var result = document.createElement('p');
-            result.innerHTML = upperLetters(input.value);
-            transformedText.appendChild(result);
-            input.value = '';
+        
+        for(var i = 0; i < radios.length; i++){
+
+            if(radios[i].value === "uppercase" && radios[i].checked){
+                textValue = input.value;
+                result.innerHTML = upperLetters(textValue);
+                transformedText.appendChild(result);
+            } else if(radios[i].value === "lowercase" && radios[i].checked){
+                textValue = input.value;
+                result.innerHTML = lowerLetters(textValue);
+                transformedText.appendChild(result);
+            } else{
+                //concluir
+            }
+        }
+        input.value = '';
         }
         
     });
