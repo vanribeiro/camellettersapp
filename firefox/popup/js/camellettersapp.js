@@ -8,8 +8,12 @@ document.addEventListener('DOMContentLoaded', function(){
     
     button.addEventListener('click', allOptions);
     input.addEventListener('keypress', function (event) {
+        let valueTxt = input.value;
         if(event.keyCode == 13){
             allOptions();
+            if(!lib.isEmpty(valueTxt)){
+                lib.appendResult(lib.upperLetters(valueTxt));
+            }
         }
     })
 

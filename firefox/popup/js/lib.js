@@ -6,6 +6,23 @@ export function lowerLetters(txt) {
     return txt.toLowerCase();
 }
 
+export function capitalizeLetters(txt){
+    var words = txt.split(" ");
+    var capitalArray = [words.length];
+    var capitalLetter = "";
+    var anothersLetters = "";
+    var word = "";
+    var allWordsTogether = "";
+    for(var j = 0; j < words.length; j++){
+        capitalLetter = words[j].substring(0, 1).toUpperCase();
+        anothersLetters = words[j].substring(1, (words[j].length));
+        word = capitalLetter + anothersLetters;
+        capitalArray[j] = word;
+        allWordsTogether += capitalArray[j].concat() + " ";
+    }
+    return allWordsTogether;
+}
+
 export function getOptions(opt, textToTransform) {
     let textValue = textToTransform;
     let transformedText = "";
@@ -18,10 +35,12 @@ export function getOptions(opt, textToTransform) {
             transformedText = lowerLetters(textValue);
             appendResult(transformedText);
         case 'camelcase':
-            console.log('Capital Letters');
+            transformedText = capitalizeLetters(textValue);
+            appendResult(transformedText);
         default:
             break;
     }
+    
 }
 
 export function appendResult(result) {
@@ -32,21 +51,9 @@ export function appendResult(result) {
 }
 
 
-
-function capitalLetters(txt){
-    var txt = "Vanessa Cristiane Ribeiro";
-    var words = txt.split(" ");
-    var capitalArray = [words.length];
-    var capital = "";
-    var _restName = "";
-    var completeStr = "";
-    for(var j = 0; j < words.length; j++){
-        capital = words[j].substring(0, 1).toUpperCase();
-        _restName = words[j].substring(1, (words[j].length));
-        completeStr = capital + _restName;
-        capitalArray[j] = completeStr;
-        console.log(capitalArray.concat());
+export function isEmpty(txt) {
+    if(txt == ''){
+        console.log(true);
+        return true;
     }
-
-    return 
 }
