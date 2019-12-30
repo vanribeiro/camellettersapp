@@ -1,18 +1,13 @@
 {
     "name" : "Camel Letter App",
     "manifest_version": 2,
-    "version" : "1.1",
+    "version" : "1.2",
     "description": "Transforme as letras de uma palavra ou frase em maiúsculas ou minúsculas e seja feliz! 😁",
     "author" : "Van Ribeiro",
     
-    "page_action" : {
+    "browser_action" : {
         "default_popup" : "popup/camellettersapp.html",
-        "defautl_icon" : {
-            "16" : "img/icons/camel16.png",
-            "32" : "img/icons/camel32.png",
-            "48" : "img/icons/camel48.png",
-            "128": "img/icons/camel128.png"
-        }
+        "default_title" : "Camel Letters App"
     },
 
     "icons":{
