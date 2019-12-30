@@ -2,7 +2,7 @@
     "name" : "Camel Letter App",
     "manifest_version": 2,
     "version" : "1.1",
-    "description": "Transforma letras de uma palavra ou frase em maiúsculas ou minúsculas de acordo com a escolha do usuário.",
+    "description": "Transforme as letras de uma palavra ou frase em maiúsculas ou minúsculas e seja feliz! 😁",
     "author" : "Van Ribeiro",
     
     "page_action" : {
