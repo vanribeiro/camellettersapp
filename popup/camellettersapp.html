@@ -8,37 +8,41 @@
     <title>Camel Letters App</title>
 </head>
 <body>
-    <div class="container">
-        <h1 class="title-page">Camel Letters APP</h1>
-            <div class="form-group">
-                <input type="text" name="text" id="text-to-be-transformed" placeholder="Aqui vai o texto...">
+    <div class="popup">
+        <div class="container">
+            <h1 class="title-page">Camel Letters APP</h1>
+                <div class="form-group">
+                    <input type="text" name="text" id="text-to-be-transformed" placeholder="Aqui vai o texto...">
+                </div>
+                <div class="radio-btns">
+                    <div class="options">
+                        <input type="radio" name="optioncase" id="uppercase" value="uppercase">
+                        <label for="uppercase">Letras Maísculas</label>
+                    </div>
+                    <div class="options">
+                        <input type="radio" name="optioncase" id="lowercase" value="lowercase">
+                        <label for="lowercase">Letras Minúsculas</label>
+                    </div>
+                    <!-- <div class="options">
+                        <input type="radio" name="optioncase" id="camelcase" value="camelcase">
+                        <label for="camelcase">Iniciais Maísculas</label>
+                    </div> -->
+                    <div class="btn-group">
+                        <input type="button" value="transformar" id="transform-text">
+                    </div>
+                </div>
+            <div class="changed-text" id="changed-text">
             </div>
-            <div class="radio-btns">
-                <div class="options">
-                    <input type="radio" name="optioncase" id="uppercase" value="uppercase">
-                    <label for="uppercase">Letras Maísculas</label>
-                </div>
-                <div class="options">
-                    <input type="radio" name="optioncase" id="lowercase" value="lowercase">
-                    <label for="lowercase">Letras Minúsculas</label>
-                </div>
-                <!-- <div class="options">
-                    <input type="radio" name="optioncase" id="camelcase" value="camelcase">
-                    <label for="camelcase">Iniciais Maísculas</label>
-                </div> -->
-                <div class="btn-group">
-                    <input type="button" value="transformar" id="transform-text">
-                </div>
-            </div>
-        <div class="changed-text" id="changed-text">
         </div>
+        <footer>
+            <div class="container">
+                <address>
+                    <p> extensão desenvolvida por <a href="http://vanribeiro.github.io" target="_blank" rel="noopener noreferrer">@vanribeiro.dev</a></p>
+                    <p>encontrou algum erro? <a href="mailto:vanribeiro@gmail.com">escreva-me!</a></p>
+                </address>
+            </div>
+        </footer>
     </div>
-    <footer>
-        <address>
-            <p>desenvolvido por <a href="http://vanribeiro.github.io" target="_blank" rel="noopener noreferrer">@vanribeiro.dev</a></p>
-            <p>encontrou algum erro? <a href="mailto:vanribeiro@gmail.com">escreva-me!</a></p>
-        </address>
-    </footer>
     <script src="js/camellettersapp.js"></script>
 </body>
 </html>
