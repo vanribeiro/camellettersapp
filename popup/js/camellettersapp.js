@@ -13,11 +13,11 @@ document.addEventListener('DOMContentLoaded', function(){
 
             if(radios[i].value === "uppercase" && radios[i].checked){
                 textValue = input.value;
-                result.innerHTML = upperLetters(textValue);
+                result.textContent = upperLetters(textValue);
                 transformedText.appendChild(result);
             } else if(radios[i].value === "lowercase" && radios[i].checked){
                 textValue = input.value;
-                result.innerHTML = lowerLetters(textValue);
+                result.textContent = lowerLetters(textValue);
                 transformedText.appendChild(result);
             } else{
                 //concluir
@@ -34,11 +34,11 @@ document.addEventListener('DOMContentLoaded', function(){
 
             if(radios[i].value === "uppercase" && radios[i].checked){
                 textValue = input.value;
-                result.innerHTML = upperLetters(textValue);
+                result.textContent = upperLetters(textValue);
                 transformedText.appendChild(result);
             } else if(radios[i].value === "lowercase" && radios[i].checked){
                 textValue = input.value;
-                result.innerHTML = lowerLetters(textValue);
+                result.textContent = lowerLetters(textValue);
                 transformedText.appendChild(result);
             } else{
                 //concluir
