@@ -2,14 +2,8 @@
     "name" : "Camel Letter App",
     "manifest_version": 2,
     "version" : "1.0",
-    "description": "Transforma letras em maiscúlas, mínusculas e converter a primeira letra de cada palavra em maiscúla.",
+    "description": "Transforma letras de uma palavra ou frase em maiúsculas ou minúsculas de acordo com a escolha do usuário.",
     "author" : "Van Ribeiro",
-    "permissions" : ["declarativeContent","storage","activeTab"],
-    "background" : {
-        "scripts" : ["popup/js/background.js"],
-        "persistent" : false
-    },
-    
     
     "page_action" : {
         "default_popup" : "popup/camellettersapp.html",
