@@ -16,6 +16,7 @@ Trabalhando em minha primeira extensão para navegadores. É um app bem simples!
 ### Próximas inclusões:
 - **Inicial de cada palavra** - permite _transformar a primeira letra de cada palavra_ em um texto inserido _em letra maiúscula_. Exemplo: "marcos fontana" para "Marcos Fontana".
 - **Botão copiar** - caso você deseje copiar o texto, apertando esse botão poderá copiá-lo e receber uma mensagem avisando disso.
+- **Contador de caracteres** - o número de caracteres máximos que poderão ser inseridos.
 
 ## Tem ideias, críticas ou sugestões?
 Deixe-me saber! Escreva para `vanribeiro.dev@gmail.com` com que deseja compartilhar! 
