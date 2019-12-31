@@ -5,7 +5,6 @@ document.addEventListener('DOMContentLoaded', function(){
     let button = document.querySelector('#transform-text');
     let radio = document.getElementsByName('optioncase');
     
-    
     button.addEventListener('click', allOptions);
     input.addEventListener('keypress', function (event) {
         let valueTxt = input.value;
@@ -15,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function(){
                 lib.appendResult(lib.upperLetters(valueTxt));
             }
         }
-    })
+    });
 
 
     function allOptions () { 

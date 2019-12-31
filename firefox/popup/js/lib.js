@@ -34,9 +34,11 @@ export function getOptions(opt, textToTransform) {
         case 'lowercase':
             transformedText = lowerLetters(textValue);
             appendResult(transformedText);
+            break;
         case 'camelcase':
             transformedText = capitalizeLetters(textValue);
             appendResult(transformedText);
+            break;
         default:
             break;
     }
@@ -46,14 +48,13 @@ export function getOptions(opt, textToTransform) {
 export function appendResult(result) {
     let transformedText = document.querySelector('#changed-text');
     let resultAnswer = document.createElement('p');
+
     resultAnswer.textContent = result;
     transformedText.appendChild(resultAnswer);
 }
 
-
 export function isEmpty(txt) {
     if(txt == ''){
-        console.log(true);
         return true;
     }
 }
